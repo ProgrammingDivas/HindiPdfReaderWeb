@@ -1,15 +1,17 @@
 import { CssBaseline, Container, Typography } from "@mui/material";
 import TextExtractPanel from "./components/TextExtractPanel";
+import { PDFUpload } from "./components/PDFUpload";
 
 export default function App() {
   return (
     <>
-      <CssBaseline />
+      {/* <CssBaseline /> */}
       <Container maxWidth="md">
-        <Typography variant="h4" align="center" gutterBottom>
+        {/* <Typography variant="h4" align="center" gutterBottom>
           Hindi PDF Text Extractor (OCR)
-        </Typography>
-        <TextExtractPanel />
+        </Typography> */}
+        {/* <TextExtractPanel /> */}
+        <PDFUpload/>
       </Container>
     </>
   );

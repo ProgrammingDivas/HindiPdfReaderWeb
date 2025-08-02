@@ -5,6 +5,9 @@ pdfjsLib.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.j
 export default function PDFViewer({ onTextExtracted }) {
   const [pdfFile, setPdfFile] = useState(null);
 
+  //api get call -> get uploaded pdf  from db
+  //api get call -> extracted text
+  //convert extracted text to voice
   const handleFileChange = (e) => {
     const file = e.target.files[0];
     if (file && file.type === "application/pdf") {
